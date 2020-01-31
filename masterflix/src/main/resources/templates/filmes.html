@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Filmes</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <div>
+        <ul class="menu">
+            <li><a href="/">Home</a></li>
+            <li><a href="/filmes">Filmes</a></li>
+            <li><a href="/cadastro">Cadastrar</a></li>
+            <li><a href="/buscar">Buscar</a></li>
+        </ul>
+    </div>
+
+    <h1> Veja os filmes cadastrados!</h1>
+
+    <div th:each="filme : ${filmes}">
+
+        <br>
+        <p>Nome: <span th:text="${filme.nome}"></span></p>
+        <p>Sinopse: <span th:text="${filme.sinopse}"></span></p>
+        <p>Genero: <span th:text="${filme.genero}"></span></p>
+        <p>Nome: <span th:text="${filme.duracao}"></span></p>
+        <p>Nome: <span th:text="${filme.lancamento}"></span></p>
+
+        <img th:src="${filme.imagem}" width="50%">
+
+
+        <br>
+
+    </div>
+
+</body>
+</html>

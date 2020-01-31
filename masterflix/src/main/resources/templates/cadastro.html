@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de filmes</title>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<div>
+    <ul class="menu">
+        <li><a href="/">Home</a></li>
+        <li><a href="/filmes">Filmes</a></li>
+        <li><a href="/cadastro">Cadastrar</a></li>
+        <li><a href="/buscar">Buscar</a></li>
+    </ul>
+</div>
+
+<form class="formulario" action="/cadastro" method="POST">
+
+    <h2>Cadastre seu filme!</h2>
+
+    <div>
+        <label>Nome do filme:</label>
+        <input type="text" name="nome"><br>
+
+        <label>Sinopse:</label>
+        <input type="text" name="sinopse"><br>
+
+
+
+        <label>Gênero do filme:</label>
+        <input type="text" name="genero"><br>
+
+        <label>Tempo de filme</label>
+        <input type="text" name="duracao">
+
+        <label> Ano de lançamento </label>
+        <input type="text" name="lancamento"><br>
+
+        <label>link imagem: </label>
+        <input type="text" name="imagem"><br><br>
+
+        <button>Cadastrar</button>
+
+
+    </div>
+
+
+
+
+
+</form>
+
+</body>
+</html>
